@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+    background: #6f788d;
+    margin: 0 auto;
+}
+.container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+    /*HEADER*/
+
+.header {
+    padding: 0;
+    height: 770px;
+    grid-template-rows: repeat(6, 1fr);
+}
+.navigation {
+    grid-column: 1 / 9;
+}
+.hero {
+    grid-column: 1 / 9;
+}
+
+    /*MAIN*/
+
+.main {
+    padding: 0;
+}
+
+.works {
+    padding: 0;
+    height: 970px;
+    grid-column: 1 / 9;
+}
+.features {
+    padding: 0;
+    height: 510px;
+    grid-column: 1 / 9;
+}
+.testimonials {
+    padding: 0;
+    height: 440px;
+    grid-column: 1 / 9;
+}
+.highlights {
+    padding: 0;
+    height: 280px;
+    grid-column: 1 / 9;
+}
+.team {
+    padding: 0;
+    height: 620px;
+    grid-column: 1 / 9;
+}
+.news {
+    padding: 0;
+    height: 820px;
+    grid-column: 1 / 9;
+}
+    /*FOOTER*/
+
+.footer {
+    padding: 0;
+}
+.footer__nav {
+    height: 500px;
+    grid-column: 1 / 9;
+}
+.footer__strip {
+    height: 80px;
+    grid-column: 1 / 9;
+}
