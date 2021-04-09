@@ -5,13 +5,14 @@ html {
 	box-sizing: inherit;
 }
 body {
-    background: #6f788d;
     margin: 0 auto;
+    font-family: "Raleway", sans-serif;
 }
+
 .container {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    column-gap: 10px;
 }
 
     /*HEADER*/
@@ -19,14 +20,56 @@ body {
 .header {
     padding: 0;
     height: 770px;
-    grid-template-rows: repeat(6, 1fr);
+    background: url(image/Placement_Area_ASSETheroSIZEDe.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .navigation {
-    grid-column: 1 / 9;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 10px;
+    height: 50px;
+}
+.navigation__btn {
+    width: 170px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #CF755A;
+    color:#FFF;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
 }
 .hero {
-    grid-column: 1 / 9;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 10px;
 }
+.hero__title {
+    grid-column: 3 / 7;
+    color: #CF755A;
+    text-align: center;
+}
+.hero__description {
+    text-align: center;
+}
+.hero__btn {
+    width: 170px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #CF755A;
+    color:#FFF;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.hero__btn:nth-of-type(1) {
+    background-color: #ffffff;
+    color: #000;
+}
+
 
     /*MAIN*/
 
@@ -38,7 +81,43 @@ body {
     padding: 0;
     height: 970px;
     grid-column: 1 / 9;
+    text-align: center;
 }
+.works__title {
+    
+}
+.works__description {
+    color: #737373;
+}
+.works__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.works__item a {
+    color:#464646;
+    text-decoration: none;
+}
+.works__item a:hover {
+    border-bottom-size: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #CF755A;
+    color: #000;
+}
+.work__gallery {
+    height: 640px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 10px;
+
+}
+.work__img {
+    height: 320px;
+    width: 460px;
+}
+
 .features {
     padding: 0;
     height: 510px;
