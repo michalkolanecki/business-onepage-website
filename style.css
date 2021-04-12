@@ -9,31 +9,32 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-.container {
-    margin: 0;
-    display: grid;
-    column-gap: 10px;
-}
-
     /*HEADER*/
 
 .header {
-    padding: 0;
     height: 770px;
     background: url(image/Placement_Area_ASSETheroSIZEDe.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 90px auto;
+    grid-template-columns: repeat(8, 1fr);
 }
 .navigation {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 10px;
-    height: 50px;
+    grid-column: 1 / 9;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.navigation__logo {
+    flex-grow: 1;
+    margin-left: 60px;
 }
 .navigation__btn {
     width: 170px;
     height: 50px;
-    margin: 0;
+    margin-right: 60px;
     padding: 0;
     background-color: #CF755A;
     color:#FFF;
@@ -42,22 +43,26 @@ body {
     border: none;
 }
 .hero {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 10px;
+    grid-column: 1 / 9;
+    text-align: center;
 }
 .hero__title {
-    grid-column: 3 / 7;
     color: #CF755A;
-    text-align: center;
+    font-size: 59px;
+    width: 740px;
+    height: 145px;
+    margin: 140px auto 0;
 }
 .hero__description {
-    text-align: center;
+    font-size: 18px;
+    width: 470px;
+    height: 80px;
+    margin: 35px auto 0;
 }
 .hero__btn {
     width: 170px;
     height: 50px;
-    margin: 0;
+    margin: 30px 65px 0;
     padding: 0;
     background-color: #CF755A;
     color:#FFF;
@@ -70,7 +75,6 @@ body {
     color: #000;
 }
 
-
     /*MAIN*/
 
 .main {
@@ -80,7 +84,6 @@ body {
 .works {
     padding: 0;
     height: 970px;
-    grid-column: 1 / 9;
     text-align: center;
 }
 .works__title {
@@ -101,16 +104,11 @@ body {
     text-decoration: none;
 }
 .works__item a:hover {
-    border-bottom-size: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #CF755A;
+    border-bottom: 2px solid #CF755A;
     color: #000;
 }
 .work__gallery {
     height: 640px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 10px;
 
 }
 .work__img {
@@ -121,27 +119,22 @@ body {
 .features {
     padding: 0;
     height: 510px;
-    grid-column: 1 / 9;
 }
 .testimonials {
     padding: 0;
     height: 440px;
-    grid-column: 1 / 9;
 }
 .highlights {
     padding: 0;
     height: 280px;
-    grid-column: 1 / 9;
 }
 .team {
     padding: 0;
     height: 620px;
-    grid-column: 1 / 9;
 }
 .news {
     padding: 0;
     height: 820px;
-    grid-column: 1 / 9;
 }
     /*FOOTER*/
 
@@ -150,9 +143,7 @@ body {
 }
 .footer__nav {
     height: 500px;
-    grid-column: 1 / 9;
 }
 .footer__strip {
     height: 80px;
-    grid-column: 1 / 9;
 }
