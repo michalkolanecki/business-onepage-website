@@ -8,6 +8,9 @@ body {
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
 }
+a {
+    text-decoration: none;
+}
 
     /*HEADER*/
 
@@ -79,21 +82,31 @@ body {
 
 .main {
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
 }
 
 .works {
     padding: 0;
+    margin: 0 auto;
     height: 970px;
     text-align: center;
+    grid-column: 1 / 5;
 }
 .works__title {
-    
+    font-size: 51px;
+    margin: 70px auto 0;
 }
 .works__description {
     color: #737373;
+    margin: 30px auto 0;
+    width: 520px;
+    height: 45px;
+    line-height: 1.5em;
 }
 .works__list {
-    margin: 0;
+    margin: 40px auto 45px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -101,7 +114,7 @@ body {
 }
 .works__item a {
     color:#464646;
-    text-decoration: none;
+    margin-right: 35px;
 }
 .works__item a:hover {
     border-bottom: 2px solid #CF755A;
@@ -109,9 +122,13 @@ body {
 }
 .work__gallery {
     height: 640px;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 320px);
+    column-gap: 270px;
 }
 .work__img {
+    margin: 0;
     height: 320px;
     width: 460px;
 }
