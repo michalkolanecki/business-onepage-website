@@ -154,7 +154,6 @@ a {
 .features__description {
     grid-column: 2 / 5;
     grid-row: 2 / 3;
-    margin: 0 30% 0 0;
 }
 .features__btn {
     grid-column: 1 / 2;
@@ -174,7 +173,19 @@ a {
     padding: 0;
     height: 440px;
     grid-column: 1 / 5;
+    background-image: url(image/Placement_Area_ASSETpanelSIZED.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
+.testimonials__title {
+    font-size: 34px;
+    margin: 120px 0 0 150px;
+}
+.testimonials__sign {
+    text-align: center;
+    margin-top: 90px;
+}
+
 .highlights {
     padding: 0;
     height: 280px;
