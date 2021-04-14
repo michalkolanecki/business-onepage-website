@@ -90,7 +90,6 @@ a {
 .works {
     padding: 0;
     margin: 0 auto;
-    height: 970px;
     text-align: center;
     grid-column: 1 / 5;
 }
@@ -121,37 +120,75 @@ a {
     color: #000;
 }
 .work__gallery {
-    height: 640px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 320px);
-    column-gap: 270px;
+    column-gap: 50px;
 }
 .work__img {
     margin: 0;
     height: 320px;
-    width: 460px;
 }
 
 .features {
     padding: 0;
     height: 510px;
+    grid-column: 1 / 5;
+    background: #AEC1BA;
 }
+.features__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.features__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 160px;
+    margin-top: 60px;
+}
+.features__title {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    font-size: 34px;
+    margin: 0;
+}
+.features__description {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    margin: 0 30% 0 0;
+}
+.features__btn {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-image: url(svg/icon.svg);
+    background-color: #CF755A;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    justify-self: end;
+    margin-right: 20px;
+}
+
 .testimonials {
     padding: 0;
     height: 440px;
+    grid-column: 1 / 5;
 }
 .highlights {
     padding: 0;
     height: 280px;
+    grid-column: 1 / 5;
 }
 .team {
     padding: 0;
     height: 620px;
+    grid-column: 1 / 5;
 }
 .news {
     padding: 0;
     height: 820px;
+    grid-column: 1 / 5;
 }
     /*FOOTER*/
 
