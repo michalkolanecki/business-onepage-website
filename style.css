@@ -223,6 +223,7 @@ a {
 .team__description {
     color: #737373;
     margin: 25px 0 0 0;
+    line-height: 1.5em;
 }
 .team__gallery {
     display: grid;
@@ -236,7 +237,58 @@ a {
 .news {
     height: 820px;
     grid-column: 1 / 5;
+    text-align: center;
 }
+.news__title {
+    font-size: 51px;
+    margin: 75px 0 0 0;
+}
+.news__description {
+    color: #737373;
+    margin: 25px 0 0 0;
+    line-height: 1.5em;
+}
+.news__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 112px;
+}
+.news__form {
+    place-self: center;
+    width: 344px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 10px 10px 30px 0px #E5E5E5;
+    padding: 32px 24px;
+}
+.news__text {
+    line-height: 1.4em;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+    position: relative;
+}
+.news__text::after {
+    content:"";
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 44px;
+    border-bottom: 2px solid #CFCFCF;
+}
+.news__img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-top: 120px;
+}
+
+.news__sign {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 120px 0 0 75px;
+}
+
     /*FOOTER*/
 
 .footer {
